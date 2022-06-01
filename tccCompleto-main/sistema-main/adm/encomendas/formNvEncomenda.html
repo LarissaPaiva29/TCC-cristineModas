@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <link rel="stylesheet" type="text/css"  href="../../css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="content-header">
+      <h1>
+        Adicionar <small>Encomenda</small>
+      </h1>
+     
+      <div class="containerCad">
+    <a class="links" id="cadastro"></a>
+
+  <div class="contentCad">
+      <div id="cadastro">
+      <form action="processaNvEncomenda.php" method="POST"  >
+        <p> 
+            <label for="cliente">ID do cliente</label>
+            <input id="id_cliente" name="id_cliente"  type="text"  placeholder="id do cliente" required  />
+          
+
+           </p>
+          <p> 
+            <label for="pagamento">Forma de Pagamento</label>
+            <input id="formaPagamento" name="formaPagamento"  type="text" placeholder="forma do pagamento" required/>
+          </p>
+           
+          <p> 
+            <label for="data">Data de entrega</label>
+            <input id="data" name="dataEntrega"  type="date" placeholder="data de entrega" required/> 
+          </p>
+           
+          <p> 
+            <label for="local">Local da entrega</label>
+            <input id="local" name="localEntrega"  type="text"  placeholder="Local da entrega" required/> 
+          </p>
+
+          <p> 
+            <label for="preco">Preço total da compra</label>
+            <input id="preco" name="precoEncomenda" type="text" onkeypress="$(this).mask('R$ #.##0,00', {reverse: true});" placeholder="preço total da compra" required/> 
+          </p>
+
+          <p> 
+            <label for="qtd">Quantidade de roupas</label>
+            <input id="qtd" name="qtdEncomenda" type="text"  placeholder="quantidade de roupas"required /> 
+          </p>
+    
+          <div id="cxBtn">
+            <input type="submit" value="Cadastrar" />
+            <input type="button" value="Cancelar" id="btnCancelar">
+          </div>
+</div>
+        </form>
+<script>
+  const btn = document.getElementById('btnCancelar')
+  btn.addEventListener('click',()=>{
+    window.location = '../index.php'
+  })
+</script>
+</div>
+
+
+</body>
+</html>

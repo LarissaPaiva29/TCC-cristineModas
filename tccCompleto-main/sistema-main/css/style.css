@@ -1,0 +1,343 @@
+/* CSS reset */
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: Arial,sans-serif;
+  }
+   
+  
+  a{
+    text-decoration: none;
+  }
+   
+  
+  a.links{
+    display: none;
+  }
+  .content{
+    width: 600px;
+    min-height: 600px;    
+    margin: 10px auto;
+    position: relative;   
+    font-style: italic;
+  }
+
+  h1{
+    font-size: 40px;
+    color: #9932CC;
+    padding: 2px 0 10px 0;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  h1:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  p{
+    margin-bottom:15px;
+  }
+   
+  .content p:first-child{
+    margin: 0px;
+  }
+   
+  label{
+    color: #d045d4;
+    position: relative;
+    font-style: italic;
+  }
+
+  
+  /*estilo dos input,  menos o checkbox */
+  input:not([type="checkbox"]){
+    width: 100%;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    font-style: italic;
+   
+   
+  }
+   
+  /*estilo do botão submit */
+  input[type="submit"],#btnCancelar{
+    width: 45%!important;
+    cursor: pointer;  
+    background:  #9932CC;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff;   
+    margin-bottom: 10px;  
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    font-style: italic;
+    
+  }
+
+   
+  #btnCancelar a{
+    color: #fff;
+  }
+  #login{
+    position: absolute;
+    top: 15px;
+    width: 80%;   
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+    background: #f7f7f7;
+    border: 1px solid rgba(182, 37, 163, 0.8);
+    left: 50px;
+    border-radius: 5px;
+    font-style: italic;
+     
+  }
+ 
+
+ #cxBtn{
+   display: flex;
+   justify-content: space-between;
+  align-items: center;
+
+ }
+
+  
+
+
+  :root {
+    --cor-fundo: #9932CC;
+    --cor-hover: rgb(180, 94, 206);
+    --cor-primaria: rgb(231, 241, 236);
+}
+
+
+.dp-menu ul {
+    list-style-type: none;
+    padding: 10px;
+    
+    
+}
+
+.dp-menu ul {
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+.dp-menu ul li img {
+  display:inline;
+  position: relative;
+  
+  
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+    font-style: italic;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+    
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+    font-style: italic;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-style: italic;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color:#9932CC;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #eee;
+}
+main{
+  background-color: #eee;
+  font-style: italic;
+  margin-top: 2%;
+}
+
+
+.cxCard{
+  background-color: #eee;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  
+}
+.card{
+  width: 300px;
+  height: 300px;
+  background-color: #dca3f8;
+  
+}
+.card button{
+  color:#f7f7f7;
+  background-color: #9932CC;
+  width: 100px;
+  height: 30px;
+  border-color: #9932CC;
+  margin: 0;
+  top: 15%;
+  left: 32%;
+  position:relative;
+  font-style: italic;
+  border-radius: 5px;
+}
+    
+  
+.card h3{
+  text-align: center;
+  color:#9932CC;
+  margin-top: 10%;
+  font-style: italic;
+  
+}
+.card h2{
+  text-align: center;
+  color:#9932CC;
+  margin-top: 25%;
+  font-style: italic;
+}
+
+
+.site-footer {
+ position: absolute; 
+ height: 2.5rem; 
+ width: 100%; 
+ bottom: 0;
+
+  background: #9932CC;
+  color: #f1f1f1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  
+}
+
+.containerCad{
+  width: 600px;
+  min-height: 600px;    
+  margin: 10px auto;
+  position: relative;   
+  
+}
+
+.lista{
+  padding: 40px;
+  text-align: center;
+  background-size: 100% auto;
+  align-content: center;
+  font-style: italic;
+ 
+ 
+}
+.lista table {
+  align-items: center;
+  border-collapse: collapse;
+  width: 100%;
+  font-style: italic;
+
+}
+
+
+.lista th {
+
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #d292f1;
+  height: 70px;
+  font-style: italic;
+
+}
+
+.lista td {
+  padding: 20px;
+  border: 1px solid black;
+  width: 100px;
+  font-style: italic;
+ 
+}
